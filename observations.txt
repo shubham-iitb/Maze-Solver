@@ -1,0 +1,20 @@
+Name -> Shubham Anand
+Roll No. - 160050060
+=====================================================
+Observations--
+=====================================================
+
+For path.png--
+--------------
+On running the code with grid20.txt maze and probability p = 0.2, we see that there is deviation from the actual(optimal) path when p = 1 at many instants. The agent goes multiple steps in the wrong direction but eventually reaches the goal state.
+This happens because at each state, there is a non zero probability of going to a state which is valid but different than the policy. Hence, the path is not optimal.
+
+
+
+For plot.png--
+--------------
+I ran the code with the grid10.txt maze and different values of p, ranging from 0 to 1 (both included) and in steps of 0.05.
+
+We see that, in the start when probability is too low (say between 0 and 0.2), the number of actions required to reach the end state is too large. 
+This number comes down when p further increases and we see that the graph is decreasing (overall). Again, this happens due to the fact that at each state, the probability of choosing the state described by the policy increases as we increase p and hence it reaches the goal state earlier.
+Since, we run only a single run and do not take average of many runs(for the same p), the graph has some fluctuations in between but they don't seem to make much difference in the structure of the graph which is decreasing.
